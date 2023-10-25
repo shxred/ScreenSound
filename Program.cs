@@ -1,11 +1,14 @@
-﻿Musica musica1 = new Musica();
-musica1.nome = "Sweet";
-musica1.artista = "Guns N Roses";
+﻿Episodio ep1 = new(2, "Teste11", 45);
+ep1.AdicionarConvidados("Madu");
+ep1.AdicionarConvidados("Cadu");
+ep1.AdicionarConvidados("Livia");
 
-Console.WriteLine($"Nome da música {musica1.nome} do artista {musica1.artista}");
+Episodio ep2 = new(1, "Teste22", 67);
+ep2.AdicionarConvidados("Carlos");
+ep2.AdicionarConvidados("Matheus");
+ep2.AdicionarConvidados("Roberto");
 
-Musica musica2 = new Musica();
-musica2.nome = "One";
-musica2.artista = "Metallica";
-
-Console.WriteLine($"Nome da música {musica2.nome} do artista {musica2.artista}");
+Podcast podcast = new("Podcast especial", "Edu");
+podcast.AdicionarEpisodios(ep1);
+podcast.AdicionarEpisodios(ep2);
+podcast.ExibirDetalhes();
