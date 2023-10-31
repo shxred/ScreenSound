@@ -1,4 +1,6 @@
-﻿class Episodio
+﻿using ScreenSound.Models;
+
+class Episodio
 {
 
     private List<string> convidados = new();
